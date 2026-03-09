@@ -45,23 +45,47 @@
         });
     }
 
-    // Header scroll effect
+    // Header scroll effect - sticky header that moves to top when top bar is scrolled away
     function initHeaderScroll() {
         if (!header) return;
 
-        let lastScroll = 0;
+        const topBar = document.querySelector('.top-bar');
+        const topBarHeight = topBar ? topBar.offsetHeight : 42;
 
-        window.addEventListener('scroll', function() {
+        function updateHeader() {
             const currentScroll = window.pageYOffset;
 
+            // Check if we're on desktop (top bar is visible)
+            const isDesktop = window.innerWidth >= 1024;
+
+            if (isDesktop) {
+                // When scrolled past the top bar, stick header to top
+                if (currentScroll >= topBarHeight) {
+                    header.classList.add('header-sticky');
+                } else {
+                    header.classList.remove('header-sticky');
+                }
+            } else {
+                // On mobile/tablet, header is always at top
+                header.classList.remove('header-sticky');
+            }
+
+            // Add shadow when scrolled
             if (currentScroll > 100) {
                 header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
             } else {
                 header.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.05)';
             }
+        }
 
-            lastScroll = currentScroll;
-        });
+        // Run on scroll
+        window.addEventListener('scroll', updateHeader);
+
+        // Run on resize (in case viewport changes)
+        window.addEventListener('resize', updateHeader);
+
+        // Run once on init
+        updateHeader();
     }
 
     // Form Validation and Submission
