@@ -1,19 +1,19 @@
-/* ===== CSS Variables - InstaClean Style ===== */
+/* ===== CSS Variables - CleanServ Style ===== */
 :root {
-    --primary: #f3c91c;
-    --primary-dark: #d9b318;
-    --primary-light: #fef9e6;
-    --secondary: #15295f;
-    --secondary-dark: #0a1a3d;
-    --secondary-light: #1e3a7a;
-    --accent: #58bf93;
+    --primary: #D4AF37;
+    --primary-dark: #B8962F;
+    --primary-light: #FAF5E6;
+    --secondary: #0E6B66;
+    --secondary-dark: #0A4F4B;
+    --secondary-light: #128680;
+    --accent: #0E6B66;
     --text: #222222;
     --text-light: #666666;
     --text-muted: #999999;
-    --background: #ffffff;
-    --background-alt: #f6f6f6;
+    --background: #FFFFFF;
+    --background-alt: #F8F8F8;
     --border: #e5e7eb;
-    --white: #ffffff;
+    --white: #FFFFFF;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -338,7 +338,7 @@ ul {
 }
 
 .hero-badge {
-    background-color: rgba(243, 201, 28, 0.2);
+    background-color: rgba(212, 175, 55, 0.2);
 }
 
 /* ===== Hero Section ===== */
