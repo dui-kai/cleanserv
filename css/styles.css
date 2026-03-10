@@ -333,6 +333,51 @@ ul {
     display: none;
 }
 
+/* Mobile Nav Social Links - hidden by default */
+.nav-social {
+    display: none;
+}
+
+.nav.active .nav-social {
+    display: block;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 10px;
+}
+
+.nav-social-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.nav-social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.nav-social-links a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transform: translateY(-2px);
+}
+
 /* ===== Section Badges ===== */
 .section-badge,
 .hero-badge {
