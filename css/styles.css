@@ -1,4 +1,4 @@
-/* ===== CSS Variables - CleanServ Style ===== */
+/* ===== CSS Variables - UrbanAxis Property Services ===== */
 :root {
     --primary: #D4AF37;
     --primary-dark: #B8962F;
@@ -210,13 +210,22 @@ ul {
 }
 
 .logo-text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    color: var(--text);
+}
+
+.logo-text .logo-urban {
     color: var(--secondary);
 }
 
-.logo-text span {
+.logo-text .logo-axis {
     color: var(--primary);
+}
+
+.logo-text .logo-suffix {
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .nav {
@@ -1118,6 +1127,14 @@ ul {
 
 .footer-brand .logo-text {
     color: var(--white);
+}
+
+.footer-brand .logo-text .logo-urban {
+    color: var(--white);
+}
+
+.footer-brand .logo-text .logo-suffix {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-brand p {
