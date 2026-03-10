@@ -704,7 +704,7 @@ ul {
 
 /* Services Page Styles */
 .page-header {
-    padding: 140px 0 60px;
+    padding: 110px 0 40px;
     background: linear-gradient(135deg, var(--background-alt) 0%, var(--white) 100%);
     text-align: center;
 }
@@ -727,7 +727,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .service-item {
@@ -776,14 +776,22 @@ ul {
 .back-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--secondary);
+    gap: 6px;
+    color: var(--text-light);
     font-weight: 500;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    padding: 6px 14px 6px 10px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    transition: var(--transition);
 }
 
 .back-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+    background-color: var(--primary-light);
 }
 
 @media (min-width: 768px) {
@@ -806,11 +814,11 @@ ul {
     }
 
     .page-header {
-        padding: 180px 0 80px;
+        padding: 140px 0 50px;
     }
 
     .services-page-grid {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 }
 
